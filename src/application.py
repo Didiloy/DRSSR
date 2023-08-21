@@ -1,6 +1,6 @@
 import gi
 
-from src.window import DsrssrWindow
+from src.window import DrssrWindow
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -9,9 +9,9 @@ gi.require_version("Gio", "2.0")
 from gi.repository import Gtk, Gio, Adw
 
 
-class DsrssrApplication(Adw.Application):
+class DrssrApplication(Adw.Application):
     def __init__(self):
-        super().__init__(application_id='com.github.didiloy.dsrssr',
+        super().__init__(application_id='com.github.didiloy.drssr',
                          flags=Gio.ApplicationFlags.DEFAULT_FLAGS)
 
     def do_activate(self):
@@ -22,5 +22,5 @@ class DsrssrApplication(Adw.Application):
         """
         win = self.props.active_window
         if not win:
-            win = DsrssrWindow(application=self)
+            win = DrssrWindow(application=self)
         win.present()

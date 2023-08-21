@@ -43,15 +43,22 @@
                 <property name="vexpand">True</property>
                 <child>
                   <object class="GtkLabel" id="label_feed_description">
-                    <property name="halign">start</property>
+                    <property name="ellipsize">end</property>
                     <property name="hexpand">True</property>
+                    <property name="max-width-chars">1</property>
                     <property name="selectable">True</property>
                     <property name="vexpand">True</property>
                   </object>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label_feed_date">
+                  <object class="GtkBox" id="box_date">
                     <property name="halign">end</property>
+                    <child>
+                      <object class="GtkLabel" id="label_feed_date">
+                        <property name="halign">end</property>
+                        <property name="margin-end">5</property>
+                      </object>
+                    </child>
                   </object>
                 </child>
               </object>

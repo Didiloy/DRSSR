@@ -11,8 +11,8 @@ from gi.repository import Gtk, Gio, Adw
 
 
 @Gtk.Template(filename='./data/ui/window.ui')
-class DsrssrWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'DsrssrWindow'
+class DrssrWindow(Adw.ApplicationWindow):
+    __gtype_name__ = 'DrssrWindow'
 
     button_add_feeds = Gtk.Template.Child("button_add_feeds")
     button_manage_feeds = Gtk.Template.Child()
@@ -22,7 +22,7 @@ class DsrssrWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.init_template()
-        self.set_title("DSRSSR")
+        self.set_title("DRSSR")
         self.button_add_feeds.connect('clicked', self.on_button_add_feeds_clicked)
         self.button_manage_feeds.connect('clicked', self.on_button_manage_feeds_clicked)
         self.button_refresh_feeds.connect('clicked', self.on_button_refresh_feeds_clicked)

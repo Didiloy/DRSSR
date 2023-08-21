@@ -4,10 +4,10 @@ import os
 
 class Config:
     def __init__(self):
-        self._config_dir = platformdirs.user_config_dir('DSRSSR', 'com.github.didiloy')
+        self._config_dir = platformdirs.user_config_dir('DRSSR', 'com.github.didiloy')
         if not os.path.exists(self._config_dir):
             os.makedirs(self._config_dir)
-        self._data_dir = platformdirs.user_data_dir('DSRSSR', 'com.github.didiloy')
+        self._data_dir = platformdirs.user_data_dir('DRSSR', 'com.github.didiloy')
         if not os.path.exists(self._data_dir):
             os.makedirs(self._data_dir)
 
