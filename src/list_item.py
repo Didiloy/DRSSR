@@ -21,5 +21,5 @@ class ListItem(Gtk.ListBoxRow):
         self.label_feed_title.set_text(title)
         self.label_feed_description.set_text(description)
         self.label_feed_date.set_text(date)
-        self.feed_avatar = Adw.Avatar.new(50, description[0], False)
-        # self.feed_avatar.set_text(description)
+        self.feed_avatar = Adw.Avatar(size=32, text=title, show_initials=True)
+        self.feed_avatar.set_text(title)

@@ -22,8 +22,8 @@
 	(1,25,"GtkListBox","listbox",24,None,None,None,None,None)
   </object>
   <object_property>
-	(1,1,"GtkWindow","default-height","500",None,None,None,None,None,None,None,None,None),
-	(1,1,"GtkWindow","default-width","800",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-height","550",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","900",None,None,None,None,None,None,None,None,None),
 	(1,2,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
 	(1,4,"GtkButton","icon-name","view-refresh-symbolic",None,None,None,None,None,None,None,None,None),
 	(1,5,"GtkButton","icon-name","list-add-symbolic",None,None,None,None,None,None,None,None,None),
@@ -48,7 +48,6 @@
 	(1,24,"GtkViewport","child",None,None,None,None,None,25,None,None,None,None),
 	(1,24,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
 	(1,24,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
-	(1,25,"GtkListBox","show-separators","True",None,None,None,None,None,None,None,None,None),
 	(1,25,"GtkWidget","css-classes","boxed-list",None,None,None,None,None,None,None,None,None),
 	(1,25,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
 	(1,25,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),

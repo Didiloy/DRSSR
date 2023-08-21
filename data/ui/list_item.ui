@@ -29,10 +29,10 @@
             <child>
               <object class="GtkLabel" id="label_feed_title">
                 <property name="css-classes">heading</property>
+                <property name="ellipsize">end</property>
                 <property name="halign">start</property>
                 <property name="hexpand">True</property>
                 <property name="natural-wrap-mode">word</property>
-                <property name="selectable">True</property>
                 <property name="vexpand">True</property>
                 <property name="wrap">True</property>
               </object>
@@ -46,7 +46,6 @@
                     <property name="ellipsize">end</property>
                     <property name="hexpand">True</property>
                     <property name="max-width-chars">1</property>
-                    <property name="selectable">True</property>
                     <property name="vexpand">True</property>
                   </object>
                 </child>
@@ -56,6 +55,7 @@
                     <child>
                       <object class="GtkLabel" id="label_feed_date">
                         <property name="halign">end</property>
+                        <property name="justify">right</property>
                         <property name="margin-end">5</property>
                       </object>
                     </child>

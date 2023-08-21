@@ -1,3 +1,5 @@
+import time
+
 import gi
 
 from src.list_item import ListItem
@@ -31,11 +33,15 @@ class DrssrWindow(Adw.ApplicationWindow):
         pass
 
     def on_button_manage_feeds_clicked(self, button):
-        pass
+        rss_parser = RssParser()
+        print(rss_parser.feeds)
+        rss_parser.save_feeds()
 
     def on_button_refresh_feeds_clicked(self, button):
         rss_parser = RssParser()
-        feed = rss_parser.parse("https://www.gamingonlinux.com/article_rss.php")
-        for i in range(0, len(feed.entries)):
-            self.listbox.append(ListItem(feed.entries[i].title, feed.entries[i].description, "now"))
+        feed = rss_parser.parse()
+        for i in range(0, len(feed)):
+            self.listbox.append(ListItem(feed[i].title,
+                                         feed[i].description,
+                                         time.strftime("%d/%m/%Y", feed[i].published_parsed)))
             
