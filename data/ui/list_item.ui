@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.12.1 -->
+<interface>
+  <!-- interface-name listitem.ui -->
+  <requires lib="gtk" version="4.10"/>
+  <requires lib="libadwaita" version="1.3"/>
+  <template class="list_item" parent="GtkListBoxRow">
+    <child>
+      <object class="GtkGrid" id="main_grid">
+        <child>
+          <object class="AdwAvatar" id="feed_avatar">
+            <property name="halign">center</property>
+            <property name="show-initials">True</property>
+            <property name="valign">center</property>
+            <property name="vexpand">True</property>
+            <property name="width-request">60</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="column-span">1</property>
+              <property name="row">0</property>
+              <property name="row-span">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="title_box">
+            <property name="hexpand">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="label_feed_title">
+                <property name="css-classes">heading</property>
+                <property name="halign">start</property>
+                <property name="hexpand">True</property>
+                <property name="natural-wrap-mode">word</property>
+                <property name="selectable">True</property>
+                <property name="vexpand">True</property>
+                <property name="wrap">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="box_description">
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <child>
+                  <object class="GtkLabel" id="label_feed_description">
+                    <property name="halign">start</property>
+                    <property name="hexpand">True</property>
+                    <property name="selectable">True</property>
+                    <property name="vexpand">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_feed_date">
+                    <property name="halign">end</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="column-span">1</property>
+              <property name="row">0</property>
+              <property name="row-span">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

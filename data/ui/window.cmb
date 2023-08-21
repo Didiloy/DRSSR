@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.12.0" target_tk="gtk-4.0">
+  <ui>
+	(1,1,"window.ui","window.ui",None,None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"AdwApplicationWindow","DsrssrWindow",None,None,None,None,None,None),
+	(1,2,"GtkBox","main_box",1,None,None,None,-1,None),
+	(1,3,"AdwHeaderBar","header_bar",2,None,None,None,None,None),
+	(1,4,"GtkButton","button_refresh_feeds",3,None,"end",None,None,None),
+	(1,5,"GtkButton","button_add_feeds",3,None,"end",None,None,None),
+	(1,6,"GtkButton","button_manage_feeds",3,None,"end",None,None,None),
+	(1,16,"GtkScrolledWindow","main_scrolled_window",2,None,None,None,None,None),
+	(1,17,"GtkBox","top_box",16,None,None,None,None,None),
+	(1,18,"GtkProgressBar","progress_bar",17,None,None,None,None,None),
+	(1,19,"GtkBox","box_labels",17,None,None,None,1,None),
+	(1,20,"GtkLabel","label_articles",19,None,None,None,None,None),
+	(1,21,"GtkLabel","label_number_articles",19,None,None,None,1,None),
+	(1,22,"GtkGrid","grid",17,None,None,None,2,None),
+	(1,24,"GtkViewport","viewport",22,None,None,None,1,None),
+	(1,25,"GtkListBox","listbox",24,None,None,None,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","500",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","800",None,None,None,None,None,None,None,None,None),
+	(1,2,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkButton","icon-name","view-refresh-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkButton","icon-name","list-add-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkButton","icon-name","emblem-documents-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,16,"GtkScrolledWindow","hscrollbar-policy","never",None,None,None,None,None,None,None,None,None),
+	(1,17,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,17,"GtkWidget","margin-bottom","30",None,None,None,None,None,None,None,None,None),
+	(1,17,"GtkWidget","margin-end","40",None,None,None,None,None,None,None,None,None),
+	(1,17,"GtkWidget","margin-start","40",None,None,None,None,None,None,None,None,None),
+	(1,18,"GtkWidget","css-classes","osd",None,None,None,None,None,None,None,None,None),
+	(1,19,"GtkWidget","margin-bottom","20",None,None,None,None,None,None,None,None,None),
+	(1,19,"GtkWidget","margin-top","20",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkLabel","label","Articles",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","css-classes","title-2",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
+	(1,20,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,21,"GtkLabel","label","0 articles",None,None,None,None,None,None,None,None,None),
+	(1,21,"GtkWidget","halign","end",None,None,None,None,None,None,None,None,None),
+	(1,21,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkScrollable","hscroll-policy","natural",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkScrollable","vscroll-policy","natural",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkViewport","child",None,None,None,None,None,25,None,None,None,None),
+	(1,24,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,24,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,25,"GtkListBox","show-separators","True",None,None,None,None,None,None,None,None,None),
+	(1,25,"GtkWidget","css-classes","boxed-list",None,None,None,None,None,None,None,None,None),
+	(1,25,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
+	(1,25,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None)
+  </object_property>
+  <object_signal>
+	(1,1,5,"GtkButton","clicked","on_button_add_feeds_clicked",None,None,None,None,None)
+  </object_signal>
+  <object_data>
+	(1,21,"GtkWidget",1,1,None,None,None)
+  </object_data>
+</cambalache-project>
