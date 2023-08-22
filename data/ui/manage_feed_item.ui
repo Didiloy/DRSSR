@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.12.1 -->
+<interface>
+  <!-- interface-name manage_feed_item.ui -->
+  <requires lib="gtk" version="4.10"/>
+  <template class="manage_feed_item" parent="GtkListBoxRow">
+    <property name="height-request">40</property>
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="width-request">250</property>
+        <child>
+          <object class="GtkBox" id="label_box">
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkLabel" id="label_title">
+                <property name="css-classes">heading</property>
+                <property name="ellipsize">end</property>
+                <property name="hexpand">True</property>
+                <property name="margin-end">10</property>
+                <property name="max-width-chars">1</property>
+                <property name="vexpand">True</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="buttons_box">
+            <property name="halign">end</property>
+            <property name="hexpand">True</property>
+            <property name="margin-end">15</property>
+            <property name="valign">center</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkButton" id="button_delete_feed">
+                <property name="css-classes">destructive-action</property>
+                <property name="icon-name">user-trash-symbolic</property>
+                <property name="margin-end">10</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSwitch" id="switch_active_feed">
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

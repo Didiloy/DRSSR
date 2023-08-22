@@ -4,6 +4,7 @@ import gi
 
 from src.add_feed import AddFeed
 from src.list_item import ListItem
+from src.manage_feed import ManageFeed
 from src.rss.rss_parser import RssParser
 
 gi.require_version('Gtk', '4.0')
@@ -21,6 +22,7 @@ class DrssrWindow(Adw.ApplicationWindow):
     button_manage_feeds = Gtk.Template.Child()
     button_refresh_feeds = Gtk.Template.Child()
     listbox = Gtk.Template.Child()
+    progress_bar = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -35,9 +37,8 @@ class DrssrWindow(Adw.ApplicationWindow):
         add_feed.show()
 
     def on_button_manage_feeds_clicked(self, button):
-        rss_parser = RssParser.get_instance()
-        print(rss_parser.feeds)
-        rss_parser.save_feeds()
+        manage_feed = ManageFeed()
+        manage_feed.show()
 
     def on_button_refresh_feeds_clicked(self, button):
         rss_parser = RssParser.get_instance()

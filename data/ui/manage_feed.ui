@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.12.1 -->
+<interface>
+  <!-- interface-name manage_feed.ui -->
+  <requires lib="gtk" version="4.10"/>
+  <requires lib="libadwaita" version="1.3"/>
+  <template class="manage_feed" parent="AdwWindow">
+    <property name="default-height">400</property>
+    <property name="default-width">300</property>
+    <property name="title">DRSSR</property>
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="hexpand">True</property>
+        <property name="orientation">vertical</property>
+        <property name="vexpand">True</property>
+        <child>
+          <object class="AdwHeaderBar" id="header_bar"/>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolled_window">
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkViewport" id="viewport">
+                <property name="hexpand">True</property>
+                <property name="margin-bottom">20</property>
+                <property name="margin-end">20</property>
+                <property name="margin-start">20</property>
+                <property name="margin-top">20</property>
+                <property name="vexpand">True</property>
+                <child>
+                  <object class="GtkListBox" id="listbox">
+                    <property name="css-classes">boxed-list</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="vexpand">True</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

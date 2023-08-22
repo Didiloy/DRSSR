@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.12.0" target_tk="gtk-4.0">
+  <ui>
+	(1,1,"manage_feed_item.ui","manage_feed_item.ui",None,None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"GtkListBoxRow","manage_feed_item",None,None,None,None,None,None),
+	(1,2,"GtkBox","main_box",1,None,None,None,-1,None),
+	(1,4,"GtkBox","buttons_box",2,None,None,None,1,None),
+	(1,5,"GtkButton","button_delete_feed",4,None,None,None,None,None),
+	(1,6,"GtkSwitch","switch_active_feed",4,None,None,None,1,None),
+	(1,7,"GtkBox","label_box",2,None,None,None,None,None),
+	(1,8,"GtkLabel","label_title",7,None,None,None,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWidget","height-request","40",None,None,None,None,None,None,None,None,None),
+	(1,2,"GtkWidget","width-request","250",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkWidget","halign","end",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkWidget","margin-end","15",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkButton","icon-name","user-trash-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkWidget","css-classes","destructive-action",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkWidget","margin-end","10",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
+	(1,7,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,7,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkLabel","ellipsize","end",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkLabel","max-width-chars","1",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","css-classes","heading",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-end","10",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None)
+  </object_property>
+</cambalache-project>
