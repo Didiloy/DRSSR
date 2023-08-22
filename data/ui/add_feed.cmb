@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.12.0" target_tk="gtk-4.0">
+  <ui>
+	(1,1,"add_feed.ui","add_feed.ui",None,None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"GtkDialog","add_feed",None,None,None,None,None,None),
+	(1,2,"GtkBox","main_box",1,None,None,None,None,None),
+	(1,3,"AdwHeaderBar","header_bar",2,None,None,None,None,None),
+	(1,4,"GtkButton","button_cancel",3,None,None,None,None,None),
+	(1,5,"GtkButton","button_add_feed",3,None,"end",None,None,None),
+	(1,6,"GtkBox","main_container",2,None,None,None,1,None),
+	(1,7,"GtkBox","url_container",6,None,None,None,None,None),
+	(1,8,"GtkLabel","label_url",7,None,None,None,None,None),
+	(1,9,"GtkEntry","entry_url",7,None,None,None,1,None)
+  </object>
+  <object_property>
+	(1,1,"GtkDialog","use-header-bar","1",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWidget","height-request","300",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWidget","width-request","350",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","decorated","False",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","title","DRSSR",None,None,None,None,None,None,None,None,None),
+	(1,2,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,3,"AdwHeaderBar","show-end-title-buttons","False",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkButton","icon-name","edit-undo-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkWidget","css-classes","destructive-action",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkButton","icon-name","list-add-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkWidget","css-classes","suggested-action",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,7,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
+	(1,7,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkLabel","label","Url: ",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkEntry","activates-default","True",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkEntry","input-purpose","url",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkEntry","primary-icon-name","application-rss+xml-symbolic",None,None,None,None,None,None,None,None,None)
+  </object_property>
+</cambalache-project>

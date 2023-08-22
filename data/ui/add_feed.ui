@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.12.1 -->
+<interface>
+  <!-- interface-name add_feed.ui -->
+  <requires lib="gtk" version="4.10"/>
+  <requires lib="libadwaita" version="1.3"/>
+  <template class="add_feed" parent="GtkDialog">
+    <property name="decorated">False</property>
+    <property name="height-request">300</property>
+    <property name="modal">True</property>
+    <property name="title">DRSSR</property>
+    <property name="use-header-bar">1</property>
+    <property name="width-request">350</property>
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="AdwHeaderBar" id="header_bar">
+            <property name="show-end-title-buttons">False</property>
+            <child>
+              <object class="GtkButton" id="button_cancel">
+                <property name="css-classes">destructive-action</property>
+                <property name="icon-name">edit-undo-symbolic</property>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkButton" id="button_add_feed">
+                <property name="css-classes">suggested-action</property>
+                <property name="icon-name">list-add-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="main_container">
+            <property name="halign">center</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkBox" id="url_container">
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <child>
+                  <object class="GtkLabel" id="label_url">
+                    <property name="label">Url: </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="entry_url">
+                    <property name="activates-default">True</property>
+                    <property name="input-purpose">url</property>
+                    <property name="primary-icon-name">application-rss+xml-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

@@ -2,6 +2,7 @@ import time
 
 import gi
 
+from src.add_feed import AddFeed
 from src.list_item import ListItem
 from src.rss.rss_parser import RssParser
 
@@ -30,15 +31,16 @@ class DrssrWindow(Adw.ApplicationWindow):
         self.button_refresh_feeds.connect('clicked', self.on_button_refresh_feeds_clicked)
 
     def on_button_add_feeds_clicked(self, button):
-        pass
+        add_feed = AddFeed(self)
+        add_feed.show()
 
     def on_button_manage_feeds_clicked(self, button):
-        rss_parser = RssParser()
+        rss_parser = RssParser.get_instance()
         print(rss_parser.feeds)
         rss_parser.save_feeds()
 
     def on_button_refresh_feeds_clicked(self, button):
-        rss_parser = RssParser()
+        rss_parser = RssParser.get_instance()
         feed = rss_parser.parse()
         for i in range(0, len(feed)):
             self.listbox.append(ListItem(feed[i].title,
