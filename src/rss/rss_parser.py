@@ -78,7 +78,6 @@ class RssParser:
         logging.log("Saving feeds file to: " + Config().feeds_file)
         with open(Config().feeds_file, 'w', encoding='utf-8') as f:
             feeds_string = [f.to_dict() for f in self._feeds]
-            print(feeds_string)
             dict_feeds = {"feeds": feeds_string}
             json.dump(dict_feeds, f, ensure_ascii=False, indent=4)
         logging.log("Feeds file saved")

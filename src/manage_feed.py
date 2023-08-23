@@ -20,4 +20,8 @@ class ManageFeed(Adw.Window):
         self.init_template()
         feeds = RssParser.get_instance().feeds
         for i in range(0, len(feeds)):
-            self.listbox.append(ManageFeedItem(feeds[i].title, feeds[i].active))
+            self.listbox.append(ManageFeedItem(feeds[i]))
+        self.connect("destroy", self.on_destroy)
+
+    def on_destroy(self, window):
+        self.destroy()
