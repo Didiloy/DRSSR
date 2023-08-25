@@ -59,10 +59,12 @@ class DrssrWindow(Adw.ApplicationWindow):
         for i in range(0, len(feed)):
             self.listbox.append(ListItem(feed[i].title,
                                          feed[i].description,
-                                         time.strftime("%H:%m - %d/%m/%Y", feed[i].published_parsed)))
+                                         time.strftime("%H:%m - %d/%m/%Y", feed[i].published_parsed),
+                                         feed[i].link))
         self.label_number_articles.set_text(f"{len(feed)} articles")
         self.progress_bar.set_visible(False)
 
     def on_timeout(self):
         self.progress_bar.pulse()
         return True
+

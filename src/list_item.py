@@ -1,4 +1,5 @@
 import gi
+import webbrowser
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -13,14 +14,17 @@ class ListItem(Gtk.ListBoxRow):
     label_feed_title = Gtk.Template.Child("label_feed_title")
     label_feed_description = Gtk.Template.Child()
     label_feed_date = Gtk.Template.Child()
-    feed_avatar = Gtk.Template.Child()
+    button_open_in_browser = Gtk.Template.Child()
 
-    def __init__(self, title, description, date, **kwargs):
+    def __init__(self, title, description, date, url, **kwargs):
         super().__init__(**kwargs)
         self.init_template()
         self.label_feed_title.set_text(title)
         self.label_feed_description.set_text(description)
         self.label_feed_date.set_text(f"<i>{date}</i>")
         self.label_feed_date.set_use_markup(True)
-        self.feed_avatar = Adw.Avatar(size=32, text=title, show_initials=True)
-        self.feed_avatar.set_text(title)
+        self.button_open_in_browser.connect("clicked", self.on_button_open_in_browser_clicked)
+        self.url = url
+
+    def on_button_open_in_browser_clicked(self, button):
+        webbrowser.open(self.url, 2)

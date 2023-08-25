@@ -7,21 +7,16 @@
   <object>
 	(1,1,"GtkListBoxRow","list_item",None,None,None,None,None,None),
 	(1,2,"GtkGrid","main_grid",1,None,None,None,-1,None),
-	(1,3,"AdwAvatar","feed_avatar",2,None,None,None,None,None),
 	(1,4,"GtkBox","title_box",2,None,None,None,None,None),
 	(1,5,"GtkLabel","label_feed_title",4,None,None,None,None,None),
 	(1,6,"GtkBox","box_description",4,None,None,None,1,None),
 	(1,7,"GtkLabel","label_feed_description",6,None,None,None,None,None),
 	(1,9,"GtkBox","box_date",6,None,None,None,None,None),
-	(1,10,"GtkLabel","label_feed_date",9,None,None,None,None,None)
+	(1,10,"GtkLabel","label_feed_date",9,None,None,None,None,None),
+	(1,11,"GtkButton","button_open_in_browser",2,None,None,None,None,None)
   </object>
   <object_property>
 	(1,1,"GtkWidget","height-request","75",None,None,None,None,None,None,None,None,None),
-	(1,3,"AdwAvatar","show-initials","True",None,None,None,None,None,None,None,None,None),
-	(1,3,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
-	(1,3,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
-	(1,3,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
-	(1,3,"GtkWidget","width-request","60",None,None,None,None,None,None,None,None,None),
 	(1,4,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
 	(1,4,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
 	(1,5,"GtkLabel","natural-wrap-mode","word",None,None,None,None,None,None,None,None,None),
@@ -40,19 +35,27 @@
 	(1,10,"GtkLabel","justify","right",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkLabel","use-markup","True",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkWidget","halign","end",None,None,None,None,None,None,None,None,None),
-	(1,10,"GtkWidget","margin-end","5",None,None,None,None,None,None,None,None,None)
+	(1,10,"GtkWidget","margin-end","5",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkButton","icon-name","computer-symbolic",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","css-classes","suggested-action",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","halign","center",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","margin-end","15",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","margin-start","15",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None)
   </object_property>
   <object_layout_property>
-	(1,2,3,"GtkGridLayoutChild","column","0",None,None,None,None),
-	(1,2,3,"GtkGridLayoutChild","column-span","1",None,None,None,None),
-	(1,2,3,"GtkGridLayoutChild","row","0",None,None,None,None),
-	(1,2,3,"GtkGridLayoutChild","row-span","1",None,None,None,None),
 	(1,2,4,"GtkGridLayoutChild","column","1",None,None,None,None),
 	(1,2,4,"GtkGridLayoutChild","column-span","1",None,None,None,None),
 	(1,2,4,"GtkGridLayoutChild","row","0",None,None,None,None),
-	(1,2,4,"GtkGridLayoutChild","row-span","1",None,None,None,None)
+	(1,2,4,"GtkGridLayoutChild","row-span","1",None,None,None,None),
+	(1,2,11,"GtkGridLayoutChild","column","0",None,None,None,None),
+	(1,2,11,"GtkGridLayoutChild","column-span","1",None,None,None,None),
+	(1,2,11,"GtkGridLayoutChild","row","0",None,None,None,None),
+	(1,2,11,"GtkGridLayoutChild","row-span","1",None,None,None,None)
   </object_layout_property>
   <object_data>
-	(1,10,"GtkWidget",1,1,None,None,None)
+	(1,10,"GtkWidget",1,1,None,None,None),
+	(1,11,"GtkWidget",1,1,None,None,None)
   </object_data>
 </cambalache-project>
