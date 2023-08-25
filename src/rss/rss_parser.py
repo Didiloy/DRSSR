@@ -38,7 +38,10 @@ class RssParser:
         parsed_feeds_entries = []
         for feed in self._feeds:
             if feed.active:
-                parsed_feeds_entries.append(self._parse(feed.url).entries)
+                parsed_feed: List = self._parse(feed.url).entries
+                for entry in parsed_feed:
+                    entry["feed_title"] = feed.title
+                parsed_feeds_entries.append(parsed_feed)
 
         return self.sort(parsed_feeds_entries)
 

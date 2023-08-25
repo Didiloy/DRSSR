@@ -15,14 +15,17 @@ class ListItem(Gtk.ListBoxRow):
     label_feed_description = Gtk.Template.Child()
     label_feed_date = Gtk.Template.Child()
     button_open_in_browser = Gtk.Template.Child()
+    label_feed_author = Gtk.Template.Child()
 
-    def __init__(self, title, description, date, url, **kwargs):
+    def __init__(self, title, description, date, url, author, **kwargs):
         super().__init__(**kwargs)
         self.init_template()
         self.label_feed_title.set_text(title)
         self.label_feed_description.set_text(description)
         self.label_feed_date.set_text(f"<i>{date}</i>")
         self.label_feed_date.set_use_markup(True)
+        self.label_feed_author.set_text(f"<i>{author}</i>")
+        self.label_feed_author.set_use_markup(True)
         self.button_open_in_browser.connect("clicked", self.on_button_open_in_browser_clicked)
         self.url = url
 

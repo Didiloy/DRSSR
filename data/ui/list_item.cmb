@@ -9,11 +9,12 @@
 	(1,2,"GtkGrid","main_grid",1,None,None,None,-1,None),
 	(1,4,"GtkBox","title_box",2,None,None,None,None,None),
 	(1,5,"GtkLabel","label_feed_title",4,None,None,None,None,None),
-	(1,6,"GtkBox","box_description",4,None,None,None,1,None),
+	(1,6,"GtkBox","box_description",4,None,None,None,2,None),
 	(1,7,"GtkLabel","label_feed_description",6,None,None,None,None,None),
 	(1,9,"GtkBox","box_date",6,None,None,None,None,None),
 	(1,10,"GtkLabel","label_feed_date",9,None,None,None,None,None),
-	(1,11,"GtkButton","button_open_in_browser",2,None,None,None,None,None)
+	(1,11,"GtkButton","button_open_in_browser",2,None,None,None,None,None),
+	(1,12,"GtkLabel","label_feed_author",4,None,None,None,1,None)
   </object>
   <object_property>
 	(1,1,"GtkWidget","height-request","75",None,None,None,None,None,None,None,None,None),
@@ -42,7 +43,13 @@
 	(1,11,"GtkWidget","margin-end","15",None,None,None,None,None,None,None,None,None),
 	(1,11,"GtkWidget","margin-start","15",None,None,None,None,None,None,None,None,None),
 	(1,11,"GtkWidget","valign","center",None,None,None,None,None,None,None,None,None),
-	(1,11,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None)
+	(1,11,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkLabel","ellipsize","end",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkLabel","natural-wrap-mode","word",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkLabel","wrap","True",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","halign","start",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None)
   </object_property>
   <object_layout_property>
 	(1,2,4,"GtkGridLayoutChild","column","1",None,None,None,None),
@@ -56,6 +63,11 @@
   </object_layout_property>
   <object_data>
 	(1,10,"GtkWidget",1,1,None,None,None),
-	(1,11,"GtkWidget",1,1,None,None,None)
+	(1,11,"GtkWidget",1,1,None,None,None),
+	(1,12,"GtkWidget",1,1,None,None,None),
+	(1,12,"GtkWidget",2,3,None,1,None)
   </object_data>
+  <object_data_arg>
+	(1,12,"GtkWidget",2,3,"name","accent")
+  </object_data_arg>
 </cambalache-project>

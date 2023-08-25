@@ -22,6 +22,19 @@
               </object>
             </child>
             <child>
+              <object class="GtkLabel" id="label_feed_author">
+                <property name="ellipsize">end</property>
+                <property name="halign">start</property>
+                <property name="hexpand">True</property>
+                <property name="natural-wrap-mode">word</property>
+                <property name="vexpand">True</property>
+                <property name="wrap">True</property>
+                <style>
+                  <class name="accent"/>
+                </style>
+              </object>
+            </child>
+            <child>
               <object class="GtkBox" id="box_description">
                 <property name="hexpand">True</property>
                 <property name="vexpand">True</property>

@@ -34,6 +34,7 @@ class DrssrWindow(Adw.ApplicationWindow):
         self.button_add_feeds.connect('clicked', self.on_button_add_feeds_clicked)
         self.button_manage_feeds.connect('clicked', self.on_button_manage_feeds_clicked)
         self.button_refresh_feeds.connect('clicked', self.on_button_refresh_feeds_clicked)
+        self.on_button_refresh_feeds_clicked(None)
 
     def on_button_add_feeds_clicked(self, button):
         add_feed = AddFeed(self)
@@ -60,7 +61,8 @@ class DrssrWindow(Adw.ApplicationWindow):
             self.listbox.append(ListItem(feed[i].title,
                                          feed[i].description,
                                          time.strftime("%H:%m - %d/%m/%Y", feed[i].published_parsed),
-                                         feed[i].link))
+                                         feed[i].link,
+                                         feed[i].feed_title))
         self.label_number_articles.set_text(f"{len(feed)} articles")
         self.progress_bar.set_visible(False)
 
