@@ -41,7 +41,7 @@
                 <property name="orientation">vertical</property>
                 <child>
                   <object class="GtkProgressBar" id="progress_bar">
-                    <property name="css-classes">osd</property>
+                    <property name="pulse-step">0.8</property>
                   </object>
                 </child>
                 <child>

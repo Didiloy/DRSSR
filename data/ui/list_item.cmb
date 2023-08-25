@@ -38,6 +38,7 @@
 	(1,7,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
 	(1,9,"GtkWidget","halign","end",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkLabel","justify","right",None,None,None,None,None,None,None,None,None),
+	(1,10,"GtkLabel","use-markup","True",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkWidget","halign","end",None,None,None,None,None,None,None,None,None),
 	(1,10,"GtkWidget","margin-end","5",None,None,None,None,None,None,None,None,None)
   </object_property>
@@ -51,4 +52,7 @@
 	(1,2,4,"GtkGridLayoutChild","row","0",None,None,None,None),
 	(1,2,4,"GtkGridLayoutChild","row-span","1",None,None,None,None)
   </object_layout_property>
+  <object_data>
+	(1,10,"GtkWidget",1,1,None,None,None)
+  </object_data>
 </cambalache-project>
