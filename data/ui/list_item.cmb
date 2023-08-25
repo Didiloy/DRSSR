@@ -18,8 +18,14 @@
   </object>
   <object_property>
 	(1,1,"GtkWidget","height-request","75",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWidget","vexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWidget","width-request","800",None,None,None,None,None,None,None,None,None),
+	(1,2,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
 	(1,4,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
 	(1,4,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkLabel","ellipsize","end",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkLabel","max-width-chars","1",None,None,None,None,None,None,None,None,None),
 	(1,5,"GtkLabel","natural-wrap-mode","word",None,None,None,None,None,None,None,None,None),
 	(1,5,"GtkLabel","wrap","True",None,None,None,None,None,None,None,None,None),
 	(1,5,"GtkWidget","css-classes","heading",None,None,None,None,None,None,None,None,None),
