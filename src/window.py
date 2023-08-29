@@ -7,6 +7,7 @@ from src.add_feed import AddFeed
 from src.list_item import ListItem
 from src.manage_feed import ManageFeed
 from src.rss.rss_parser import RssParser
+from src.config.config import Config
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -15,7 +16,7 @@ gi.require_version("Gio", "2.0")
 from gi.repository import Gtk, Gio, Adw, GLib
 
 
-@Gtk.Template(filename='./data/ui/window.ui')
+@Gtk.Template(filename=Config.resource_path('./data/ui/window.ui'))
 class DrssrWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'DrssrWindow'
 

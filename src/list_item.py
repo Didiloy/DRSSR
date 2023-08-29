@@ -1,5 +1,6 @@
 import gi
 import webbrowser
+from src.config.config import Config
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -8,7 +9,7 @@ gi.require_version("Gio", "2.0")
 from gi.repository import Gtk, Gio, Adw
 
 
-@Gtk.Template(filename='./data/ui/list_item.ui')
+@Gtk.Template(filename=Config.resource_path('./data/ui/list_item.ui'))
 class ListItem(Gtk.ListBoxRow):
     __gtype_name__ = 'list_item'
     label_feed_title = Gtk.Template.Child("label_feed_title")

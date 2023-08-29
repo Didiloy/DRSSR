@@ -3,6 +3,7 @@ import gi
 from src.config import logging
 from src.rss.feed import Feed
 from src.rss.rss_parser import RssParser
+from src.config.config import Config
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -11,7 +12,7 @@ gi.require_version("Gio", "2.0")
 from gi.repository import Gtk, Gio, Adw
 
 
-@Gtk.Template(filename='./data/ui/manage_feed_item.ui')
+@Gtk.Template(filename=Config.resource_path('./data/ui/manage_feed_item.ui'))
 class ManageFeedItem(Gtk.ListBoxRow):
     __gtype_name__ = 'manage_feed_item'
     label_title = Gtk.Template.Child()

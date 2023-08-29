@@ -1,0 +1,97 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "/home/dylan/T\u00e9l\u00e9chargements/projets/DRSSR/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "/home/dylan/T\u00e9l\u00e9chargements/projets/DRSSR/data/icon/rss.png"
+  },
+  {
+   "optionDest": "name",
+   "value": "DRSSR"
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "embed_manifest",
+   "value": true
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "/home/dylan/T\u00e9l\u00e9chargements/projets/DRSSR/data:data/"
+  },
+  {
+   "optionDest": "pathex",
+   "value": "/home/dylan/T\u00e9l\u00e9chargements/projets/DRSSR/DRSSR_venv/lib/python3.11/site-packages"
+  },
+  {
+   "optionDest": "pathex",
+   "value": "/home/dylan/T\u00e9l\u00e9chargements/projets/DRSSR/DRSSR_venv/bin"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "importlib._bootstrap"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}

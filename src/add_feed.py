@@ -2,6 +2,7 @@ import gi
 
 from src.rss.feed import Feed
 from src.rss.rss_parser import RssParser
+from src.config.config import Config
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -10,7 +11,7 @@ gi.require_version("Gio", "2.0")
 from gi.repository import Gtk, Gio, Adw
 
 
-@Gtk.Template(filename='./data/ui/add_feed.ui')
+@Gtk.Template(filename=Config.resource_path('./data/ui/add_feed.ui'))
 class AddFeed(Gtk.Dialog):
     __gtype_name__ = 'add_feed'
     button_add_feed = Gtk.Template.Child()
