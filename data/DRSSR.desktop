@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=DRSSR
+Comment=A simple RSS reader written in GTK4
+Exec=/home/dylan/.local/bin/DRSSR/DRSSR
+Terminal=false
+Icon=/home/dylan/.local/bin/DRSSR/rss.png
